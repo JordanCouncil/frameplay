@@ -1,0 +1,66 @@
+
+/*              Frameplay Variables             */
+
+
+
+/*----------------------------------------------------
+        Sources, Inspirations, & Techniques
+I learned so much by reading and studying code, and  
+I would not have been able to develop Frameplay without 
+the work of previous students, namely WELD, Robin, and 
+MOPF - and the lectures, of course. Their examples, codes,
+and designs helped me to find my own way forward. I will
+do my best to highlight their influences more precisely 
+throughout my code, but know that their influence, and that
+of Jen Kramer's, is nothing short of universal since
+                    I'M A NEWBIE.
+----------------------------------------------------*/
+
+
+
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 0em 1.5em;
+    }
+
+    nav ul a:hover {
+        color:$secondary-color;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav p {
+        display: inline-block;
+    }
+
+    .active {
+        color:$secondary-color;
+    }
+
+    .logo {
+        font-family: "Righteous";
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+// appears to enable column stack of nav bar at mobile size - no need for @media?
+.nav-row {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; 
+    justify-content: space-evenly;
+}
+
+
+

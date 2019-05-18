@@ -1,0 +1,255 @@
+/*
+					Frameplay Components 
+*/
+
+
+/*----------------------------------------------------
+        Sources, Inspirations, & Techniques
+I learned so much by reading and studying code, and  
+I would not have been able to develop Frameplay without 
+the work of previous students, namely WELD, Robin, and 
+MOPF - and the lectures, of course. Their examples, codes,
+and designs helped me to find my own way forward. I will
+do my best to highlight their influences more precisely 
+throughout my code, but know that their influence, and that
+of Jen Kramer's, is nothing short of universal since
+					I'M A NOVICE.
+----------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------
+ 						Hero
+----------------------------------------------------*/
+
+
+.hero-home-title {
+	font-size: 4em;
+	color: $hero-txt-home-color;
+	font-weight: $font-weight-two;
+}	
+
+.hero-title {
+	
+	font-size: 4em;
+	color: $hero-txt-color;
+}
+// Robin helped with this calc formula
+.hero-board {
+    height: calc(100vh - 2 * #{$nav-height});
+}
+
+
+
+
+/*----------------------------------------------------
+ 			Background colors and texts
+----------------------------------------------------*/
+
+.bg-primary { 
+    background-color: $primary-color; 
+    * { color: $white; }
+}
+
+.bg-secondary  {
+	background-color: $secondary-color;
+	* { color: $white; }
+}
+
+.bg-off-white { 
+    background-color: $grey-clouds; 
+}
+
+.bg-white { 
+    background-color: $white; 
+}
+
+.bg-black { 
+    background-color: $black;
+    * { color: $white; } 
+ }
+// First saw this star used in lecture or Robin
+
+
+
+
+/*----------------------------------------------------
+						text 
+----------------------------------------------------*/
+body {
+	font-weight: $font-weight-three;
+    font-family: $font-type-primary;
+    color: $grey-night;
+}
+
+h1 { color: $grey-day; }
+
+h2 { color: $grey-morning; }
+
+a { 
+   color: $primary-color; 
+   text-decoration: none;
+}
+
+.text-color-alt {
+    color: $primary-color;
+}
+.text-center {
+    text-align: center;
+}
+.text-color-nav {
+	color: $grey-morning;
+}
+
+
+
+
+/*----------------------------------------------------
+ 						buttons
+----------------------------------------------------*/
+
+.button {
+    text-align: center;
+    display: inline-block;
+    font-weight: $btn-font-weight;
+    border: $btn-border;
+    margin: $btn-margin;
+    border-radius: $btn-radius;
+    padding: $btn-padding;
+    line-height: $btn-line-height;
+    cursor: pointer;
+}
+
+.button-alt-color {
+    background-color: $black;
+    color: $white;
+}
+.button-alt-color:hover {
+    background-color: lighten($black, 15%);
+}
+
+.button-primary-color {
+    background-color: $primary-color;
+    color: $white;
+}
+.button-primary-color:hover {
+    background-color: lighten($primary-color, 15%); 
+}
+
+.button-secondary-color {
+    background-color: $secondary-color;
+    color: $white;
+}
+.button-secondary-color:hover {
+    background-color: lighten($secondary-color, 15%); 
+}
+// Rubin introduced me to button transparency
+.button-seethru {
+    background-color: unset;
+    color: $white;
+    box-shadow: inset 0 0 0 1px $white;
+}
+
+/*----------------------------------------------------
+ 					flex and grid
+----------------------------------------------------*/
+.flex-even {
+    justify-content: space-evenly;
+}
+
+.flex-align-center {
+    align-items: center;
+    flex-direction: unset;
+}
+
+.flex-space-between {
+    justify-content: space between
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; 
+}
+
+.row-play {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+// The lectures and WELD inspired this approach 
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+  flex: 98%;
+}
+
+
+@media only screen and (min-width: $bkpoint-sm) {
+  .col-1, .col-2 {
+    flex-basis: 33.3%;
+  }
+  .col-3, .col-4 {
+    flex-basis: 50%;
+  }
+  .col-5, .col-6 {
+    flex-basis: 98%;
+  }
+}
+
+
+@media only screen and (min-width: $bkpoint-md) {
+  .col-1{
+    flex-basis: 33.3%;
+  }
+  .col-2 {
+    flex-basis: 33.3%;
+  }
+  .col-3 {
+    flex-basis: 50%;
+  }
+  .col-4 {
+    flex-basis: 62.5%;
+  }
+  .col-5 {
+    flex-basis: 62.5%;
+  }
+  .col-6 {
+    flex-basis: 98%;
+  }
+}
+
+
+@media only screen and (min-width: $bkpoint-lg) {
+  .col-1{
+    flex-basis: 17.5%;
+  }
+  .col-2 {
+    flex-basis: 33.3%;
+  }
+  .col-3 {
+    flex-basis: 50%;
+  }
+  .col-4 {
+    flex-basis: 65%;
+  }
+  .col-5 {
+    flex-basis: 75%;
+  }
+  .col-6 {
+    flex-basis: 98%;
+  }
+} 
+  
+

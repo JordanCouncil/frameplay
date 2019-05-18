@@ -1,0 +1,88 @@
+
+/*				Frameplay Variables 			*/
+
+
+
+/*----------------------------------------------------
+        Sources, Inspirations, & Techniques
+I learned so much by reading and studying code, and  
+I would not have been able to develop Frameplay without 
+the work of previous students, namely WELD, Robin, and 
+MOPF - and the lectures, of course. Their examples, codes,
+and designs helped me to find my own way forward. I will
+do my best to highlight their influences more precisely 
+throughout my code, but know that their influence, and that
+of Jen Kramer's, is nothing short of universal since
+					I'M A NEWBIE.
+----------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------
+        				Colors
+----------------------------------------------------*/
+$primary-color: #7BAFD4; //Carolina Blue
+$secondary-color: #f429a4; //Hot Pink
+$grey-night: #444;
+$grey-day: #666;
+$grey-morning: #888;
+$grey-clouds: rgb(240, 240, 240);
+$white: #fff;
+$black: #000;
+
+
+
+/*----------------------------------------------------
+        			 Breakpoints
+----------------------------------------------------*/
+$bkpoint-sm: 625px;
+$bkpoint-md: 925px;
+$bkpoint-lg: 1200px;
+
+
+
+/*----------------------------------------------------
+        				Fonts
+----------------------------------------------------*/
+$font-type-primary: sans-serif; // Boring. I know.
+$font-type-logo: 'Righteous', sans-serif;
+$font-weight-one: 500;
+$font-weight-two: 400;
+$font-weight-three: 300;
+
+
+
+/*----------------------------------------------------
+        				Navbar
+----------------------------------------------------*/
+$nav-height: 1.5em;
+
+
+
+/*----------------------------------------------------
+        				 Hero
+----------------------------------------------------*/
+$hero-txt-home-color: $white;
+$hero-txt-color: $secondary-color;
+
+
+
+/*----------------------------------------------------
+        				Buttons
+----------------------------------------------------*/
+$btn-radius: 50%;
+$btn-border: none;
+$btn-padding: 0 2.5em;
+$btn-line-height: 3.5em;
+$btn-margin: 0 0.5em;
+$btn-font-weight: 400;
+
+
+
+
+
+
+
+
+
